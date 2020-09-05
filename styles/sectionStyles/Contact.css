@@ -1,0 +1,11 @@
+.Contact_title{
+    color: var(--accentYellow);
+}
+
+.Contact_subTitle{
+    color: var(--accentBlue);
+}
+
+.Contact_projectTitle{
+    color: var(--blueOppacoty);
+}

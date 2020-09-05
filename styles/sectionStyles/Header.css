@@ -1,0 +1,19 @@
+.Header{
+    background: var(--background);
+}
+.Header_logo{
+    color: var(--white);
+}
+
+.Header_navLink{
+    color: var(--white);
+}
+
+.Header_highlight{
+    color: var(--accentYellow);
+}
+
+.Header_title,
+.Header_subTitle{
+    color: var(--white);
+}
