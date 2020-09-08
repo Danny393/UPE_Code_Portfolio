@@ -1,11 +1,100 @@
-.Contact_title{
-    color: var(--accentYellow);
+.Contact {
+    padding: 2.1rem 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.Contact_subTitle{
-    color: var(--accentBlue);
+.Contact_title {
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    width: 95%;
+    margin: 2.1rem auto 1rem;
 }
 
-.Contact_projectTitle{
-    color: var(--blueOppacoty);
+.Contact_subTitle {
+    color: var(--blue);
+    font-size: 3.2rem;
+    width: 95%;
+    margin: 0 auto 2.1rem;
+}
+
+.Contact_formContainer {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.Contact_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact_inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact_formField,
+.Contact_MessageField {
+    margin-bottom: 1rem;
+}
+
+.Contact_label {
+    color: var(--textOpacity);
+    font-size: 1.5rem;
+}
+
+.Contact_input {
+    margin-top: 1rem;
+    width: 100%;
+    height: 50px;
+    border: 3px solid var(--yellow);
+    border-radius: 0.6rem;
+}
+
+.Contact_message {
+    margin-top: 1rem;
+    width: 100%;
+    height: 235px;
+    border: 3px solid var(--yellow);
+    border-radius: 0.6rem;
+}
+
+.Contact_btn {
+    width: 100%;
+    padding: 1.5rem 3.5rem;
+    background-color: transparent;
+    border: 3px solid var(--yellow);
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    color: var(--blue);
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all ease 0.5s;
+}
+
+.Contact_btn:hover {
+    background-color: var(--yellow);
+    border-color: transparent;
+}
+
+@media (min-width: 768px) {
+    .Contact_form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .Contact_inputs,
+    .Contact_MessageField {
+        flex-basis: 49%;
+    }
+
+    .Contact_btn {
+        flex-basis: 100%;
+    }
+
+    .Contact_formContainer {
+        width: 70%;
+    }
 }

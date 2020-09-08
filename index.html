@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link
-      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="./styles/main.css">
         <title>My Portfolio</title>
-        <link rel="stylesheet" href="main.css">
         <script src="https://kit.fontawesome.com/ee8942593a.js" crossorigin="anonymous"></script>
     </head>
     <body id="home">
         <header class="Header">
             <nav clss="Heaver_navbar">
+                <h1 class="Header_logo">daniel</h1>
                 <div class="Header_navigation">
                     <ul class="Header_navContent">
-                        <li class="Header_navItem"><a href="#home" class="header_navLink">Home</a></li>
+                        <li class="Header_navItem"><a href="#home" class="Header_navLink">Home</a></li>
                         <li class="Header_navItem"><a href="#about" class="Header_navLink">About</a></li>
-                        <li class="Header_navItem"><a href="#work" class="Header_navItem">Work</a></li>
+                        <li class="Header_navItem"><a href="#work" class="Header_navLink">Work</a></li>
                         <li class="Header_navItem"><a href="#contact" class="Header_navLink">Contact</a></li>
                     </ul>
                 </div>
             </nav>
             <section class="Header_content">
-                <h1>I'm Daniel</h1>
-              	<p>A 
-                      <span class="Header_highlight">
-                          <em>Full Stack Developer</em>
-                        </span>
-                  </p>
+                <h1 class="Header_title">I'm Daniel</h1>
+              	<p class="Header_subTitle">A 
+                    <span class="Header_highlight"><em>Software Engineer</em></span>
+                </p>
             </section>
         </header>
         <main class="Main">
-            <section class="Main_about" id="about">
-                <div class="Main_aboutContent">
-                    <h4 class="About_title">About</h4>
-                    <h2 class="About_subtitle">My name is Daniel Acosta</h2>
-                    <div class="About_imageContainer">
-                        <img class="About_img" src="./assets/IMG_0495.JPEG" alt="Profile Picture" width="300px">
+            <section class="About" id="about">
+                <h4 class="About_title">About</h4>
+                <h2 class="About_subTitle">My name is Daniel Acosta</h2>
+                <div class="About_content">
+                    <div class="About_imgContainer">
+                        <img class="About_img" src="./assets/IMG_0495.JPEG" alt="Profile Picture">
                     </div>
                     <div class="About_bioContent">
                         <p class="bio">
@@ -44,100 +42,102 @@
                     </div>
                 </div>
             </section>
-            <section class="Main_work" id="work">
+            <section class="Work" id="work">
                 <h4 class="Work_title">Work</h4>
                 <h2 class="Work_subTitle">Latest Projects</h2>
-                <div class="Main_project">
-                    <div class="Work_projectImgContainer">
-                        <img src="https://picsum.photos/300/300" alt="Work Project Photo">
+                <div class="Work_projects">
+                    <div class="Work_project">
+                        <div class="Work_projectImgContainer">
+                            <img class="Work_projectImg" src="https://picsum.photos/400/350" alt="Work Project Photo">
+                        </div>
+                        <div class="Main_projectContent">
+                            <h3 class="Work_projectTitle"><strong>Project Title</strong></h3>
+                            <p class="Work_projectInfo">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore non illo cumque facere repellendus nemo, animi, vero, minus deserunt reiciendis perferendis. Ex aliquid eius sed eos quaerat voluptatibus eum ipsa!
+                            </p>
+                        </div>
                     </div>
-                    <div class="Main_projectContent">
-                        <h3 class="Work_projectTitle"><strong>Project Title</strong></h3>
-                        <p class="ProjectInfo">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore non illo cumque facere repellendus nemo, animi, vero, minus deserunt reiciendis perferendis. Ex aliquid eius sed eos quaerat voluptatibus eum ipsa!
-                        </p>
+                    <div class="Work_project">
+                        <div class="Work_projectImgContainer">
+                            <img class="Work_projectImg" src="https://picsum.photos/400/350" alt="Work Project Photo">
+                        </div>
+                        <div class="Main_projectContent">
+                            <h3 class="Work_projectTitle"><strong>Project Title</strong></h3>
+                            <p class="Work_projectInfo">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore non illo cumque facere repellendus nemo, animi, vero, minus deserunt reiciendis perferendis. Ex aliquid eius sed eos quaerat voluptatibus eum ipsa!
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="Main_project">
-                    <div class="Work_projectImgContainer">
-                        <img src="https://picsum.photos/300/300" alt="Work Project Photo">
+                    <div class="Work_project">
+                        <div class="Work_projectImgContainer">
+                            <img class="Work_projectImg" src="https://picsum.photos/400/350" alt="Work Project Photo">
+                        </div>
+                        <div class="Main_projectContent">
+                            <h3 class="Work_projectTitle"><strong>Project Title</strong></h3>
+                            <p class="Work_projectInfo">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore non illo cumque facere repellendus nemo, animi, vero, minus deserunt reiciendis perferendis. Ex aliquid eius sed eos quaerat voluptatibus eum ipsa!
+                            </p>
+                        </div>
                     </div>
-                    <div class="Main_projectContent">
-                        <h3 class="Work_projectTitle"><strong>Project Title</strong></h3>
-                        <p class="ProjectInfo">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore non illo cumque facere repellendus nemo, animi, vero, minus deserunt reiciendis perferendis. Ex aliquid eius sed eos quaerat voluptatibus eum ipsa!
-                        </p>
+                    <div class="Work_project">
+                        <div class="Work_projectImgContainer">
+                            <img class="Work_projectImg" src="https://picsum.photos/400/350" alt="Work Project Photo">
+                        </div>
+                        <div class="Main_projectContent">
+                            <h3 class="Work_projectTitle"><strong>Project Title</strong></h3>
+                            <p class="Work_projectInfo">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore non illo cumque facere repellendus nemo, animi, vero, minus deserunt reiciendis perferendis. Ex aliquid eius sed eos quaerat voluptatibus eum ipsa!
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="Main_project">
-                    <div class="Work_projectImgContainer">
-                        <img src="https://picsum.photos/300/300" alt="Work Project Photo">
+                    <div class="Work_project">
+                        <div class="Work_projectImgContainer">
+                            <img class="Work_projectImg" src="https://picsum.photos/400/350" alt="Work Project Photo">
+                        </div>
+                        <div class="Main_projectContent">
+                            <h3 class="Work_projectTitle"><strong>Project Title</strong></h3>
+                            <p class="Work_projectInfo">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore non illo cumque facere repellendus nemo, animi, vero, minus deserunt reiciendis perferendis. Ex aliquid eius sed eos quaerat voluptatibus eum ipsa!
+                            </p>
+                        </div>
                     </div>
-                    <div class="Main_projectContent">
-                        <h3 class="Work_projectTitle"><strong>Project Title</strong></h3>
-                        <p class="ProjectInfo">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore non illo cumque facere repellendus nemo, animi, vero, minus deserunt reiciendis perferendis. Ex aliquid eius sed eos quaerat voluptatibus eum ipsa!
-                        </p>
-                    </div>
-                </div>
-                <div class="Main_project">
-                    <div class="Work_projectImgContainer">
-                        <img src="https://picsum.photos/300/300" alt="Work Project Photo">
-                    </div>
-                    <div class="Main_projectContent">
-                        <h3 class="Work_projectTitle"><strong>Project Title</strong></h3>
-                        <p class="ProjectInfo">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore non illo cumque facere repellendus nemo, animi, vero, minus deserunt reiciendis perferendis. Ex aliquid eius sed eos quaerat voluptatibus eum ipsa!
-                        </p>
-                    </div>
-                </div>
-                <div class="Main_project">
-                    <div class="Work_projectImgContainer">
-                        <img src="https://picsum.photos/300/300" alt="Work Project Photo">
-                    </div>
-                    <div class="Main_projectContent">
-                        <h3 class="Work_projectTitle"><strong>Project Title</strong></h3>
-                        <p class="ProjectInfo">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore non illo cumque facere repellendus nemo, animi, vero, minus deserunt reiciendis perferendis. Ex aliquid eius sed eos quaerat voluptatibus eum ipsa!
-                        </p>
-                    </div>
-                </div>
-                <div class="Main_project">
-                    <div class="Work_projectImgContainer">
-                        <img src="https://picsum.photos/300/300" alt="Work Project Photo">
-                    </div>
-                    <div class="Main_projectContent">
-                        <h3 class="Work_projectTitle"><strong>Project Title</strong></h3>
-                        <p class="ProjectInfo">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore non illo cumque facere repellendus nemo, animi, vero, minus deserunt reiciendis perferendis. Ex aliquid eius sed eos quaerat voluptatibus eum ipsa!
-                        </p>
+                    <div class="Work_project">
+                        <div class="Work_projectImgContainer">
+                            <img class="Work_projectImg" src="https://picsum.photos/400/350" alt="Work Project Photo">
+                        </div>
+                        <div class="Main_projectContent">
+                            <h3 class="Work_projectTitle"><strong>Project Title</strong></h3>
+                            <p class="Work_projectInfo">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore non illo cumque facere repellendus nemo, animi, vero, minus deserunt reiciendis perferendis. Ex aliquid eius sed eos quaerat voluptatibus eum ipsa!
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="Main_contact" id="contact">
+            <section class="Contact" id="contact">
                 <h4 class="Contact_title">Contact</h4>
                 <h2 class="Contact_subTitle">Get In Touch</h2>
                 <div class="Contact_formContainer">
-                    <form action="" method="POST" class="Contact_form">
-                        <div class="Contact_input">
+                    <form action="/" method="POST" class="Contact_form">
+                        <div class="Contact_inputs">
                             <div class="Contact_formField">
                                 <label for="name" class="Contact_label">Name:</label>
-                                <input type="text" name="name" id="name" class="contact_input" required>
+                                <input type="text" name="name" id="name" class="Contact_input" required>
                             </div>
                             <div class="Contact_formField">
                                 <label for="email" class="Contact_label">Email:</label>
-                                <input type="text" name="email" id="email" class="contact_input" required>
+                                <input type="text" name="email" id="email" class="Contact_input" required>
                             </div>
                             <div class="Contact_formField">
                                 <label for="phone" class="Contact_label">Phone:</label>
-                                <input type="text" name="phone" id="phone" class="contact_input" required>
+                                <input type="text" name="phone" id="phone" class="Contact_input" required>
                             </div>
                         </div>
                         <div class="Contact_MessageField">
-                            <label for="message" class="Contact_Label"></label>
-                            <textarea name="message" id="message" class="Contact_Message"></textarea>
+                            <label for="message" class="Contact_label">Message:</label>
+                            <textarea name="message" id="message" class="Contact_message"></textarea>
                         </div>
-                        <button type="submit"></button>
+                        <button class="Contact_btn" type="submit">Submit</button>
                     </form>
                 </div>
             </section>
@@ -145,9 +145,9 @@
         <footer class="Footer">
             <section class="Footer_content">
                 <p class="Footer_copyright">&copy; 2020 Developed by Daniel Acosta</p>
-                <ul class="Footer_socialList">
+                <ul class="Footer_socials">
                     <li class="Footer_socialItem"><a href="http://www.github.com" target="_blank" class="Footer_socialLink"><i class="fab fa-github"></i></a></li>
-                    <li class="Footer_socialItem"><a href="http://linkedin.com" target="_blank" class="Header_socialLink"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="Footer_socialItem"><a href="http://www.linkedin.com" target="_blank" class="Footer_socialLink"><i class="fab fa-linkedin-in"></i></a></li>
                 </ul>
             </section>
         </footer>

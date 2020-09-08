@@ -1,19 +1,132 @@
-.Header{
-    background: var(--background);
-}
-.Header_logo{
-    color: var(--white);
-}
-
-.Header_navLink{
-    color: var(--white);
+.Header {
+    background: url("../../assets/header-bg.svg") center no-repeat;
+    height: 100vh;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 1fr;
 }
 
-.Header_highlight{
-    color: var(--accentYellow);
+.Header_navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: 1 / 1 / 2 / -1;
+    align-self: start;
 }
 
+.Header_logo,
+.Header_navLink,
 .Header_title,
-.Header_subTitle{
+.Header_subTitle {
     color: var(--white);
+}
+
+.Header_logo {
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 3.2rem;
+    position: relative;
+    text-align: center;
+}
+
+.Header_logo::after {
+    content: " ";
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: var(--yellow);
+    position: absolute;
+    right: 17%;
+    bottom: 20%;
+}
+
+.Header_navigation {
+    flex-basis: 100%;
+}
+
+.Header_navContent {
+    display: flex;
+    justify-content: center;
+}
+
+.Header_navItem {
+    margin: 1rem;
+    list-style: none;
+}
+
+.Header_navLink {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.Header_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    grid-area: 2/1/-1/-1;
+}
+
+.Header_title {
+    font-size: 4.8rem;
+    line-height: 1.2;
+    font-weight: 700;
+    padding: 2rem 0;
+}
+
+.Header_subTitle {
+    font-size: 3rem;
+}
+
+.Header_highlight {
+    font-style: italic;
+    color: var(--yellow);
+}
+
+@media (min-width: 768px) {
+    .Header_navbar {
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+    
+    .Header_logo::after {
+        bottom: 35%;
+        right: 16%;
+    }
+
+    .Header_navigation {
+        flex-basis: initial;
+    }
+
+    .Header_title {
+        font-size: 6rem;
+    }
+
+    .Header_subTitle {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .Header_logo {
+        font-size: 4rem;
+    }
+
+    .Header_logo::after {
+        height: 22px;
+        width: 22px;
+        bottom: 17%;
+        right: 20%;
+    }
+
+    .Header_title {
+        font-size: 7.2rem;
+    }
+
+    .Header_subTitle {
+        font-size: 4rem;
+    }
 }
